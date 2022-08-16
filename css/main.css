@@ -1,0 +1,113 @@
+:root {
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+}
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../images/pattern-background-desktop.svg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-color: var(--Pale-blue);
+}
+.parent .card {
+    width: 350px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.parent .card .first-img {
+    max-width: 100%;
+}
+.parent .card h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: black;
+}
+.parent .card p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 280px;
+    margin: auto;
+    line-height: 1.5;
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+.parent .card .icons {
+    width: 250px;
+    background-color: var(--Very-pale-blue);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.parent .card .icons .price {
+    margin-left: 10px;
+    
+}
+.parent .card .icons .price span:first-child {
+    font-weight: 900;
+    font-size: 14px;
+}
+.parent .card .icons .price span:last-child {
+    color: var(--Desaturated-blue);
+    font-size: 14px;
+}
+.parent .card .icons a {
+    color: var(--Bright-blue);
+    font-weight: 900;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.parent .card .icons a:hover {
+    text-decoration: none;
+    color: var(--Desaturated-blue);
+}
+.parent .card .first-btn {
+    background-color: var(--Bright-blue);
+    color: white;
+    padding: 15px 20px ;
+    width: 290px;
+    text-align: center;
+    margin: 0 auto;
+    border: none;
+    display: block;
+    border-radius: 10px;
+    font-weight: 900;
+    margin-bottom: 20px;
+    font-size: 12px;
+    transition: 0.3s;
+}
+.parent .card .first-btn:hover {
+    background-color: var(--Desaturated-blue);
+}
+.parent .card .last-btn {
+    border: none;
+    background-color: transparent;
+    color: var(--Dark-blue);
+    text-align: center;
+    margin: auto;
+    display: block;
+    margin-bottom: 30px;
+    font-weight: 900;
+    color: var(--Desaturated-blue);
+    font-size: 12px;
+    transition: 0.3s;
+}
+.parent .card .last-btn:hover {
+    color: var(--Dark-blue);
+}
